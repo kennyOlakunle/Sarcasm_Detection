@@ -8,16 +8,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 import numpy as np
 
-import h5py
-
-with h5py.File('best_model.h5', 'r') as file:
-    print(file.attrs['keras_version'])  # Check Keras version
-    print(file.attrs['backend'])  # Check backend
-
 # Load the trained model and tokenizer
 @st.cache_resource
 def load_resources():
-    model = tf.keras.models.load_model('best_model.h5')
+    model = tf.keras.models.load_model('new_model.keras')
     tokenizer = joblib.load('tokenizer.joblib')
     print(tokenizer)
     return model, tokenizer
