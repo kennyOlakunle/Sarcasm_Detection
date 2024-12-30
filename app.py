@@ -11,7 +11,7 @@ import numpy as np
 @st.cache_resource
 def load_resources():
     try:
-        model = tf.keras.models.load_model('new_model.keras', custom_objects={'custom_activation': tf.nn.relu})
+        model = tf.keras.models.load_model('saved_model_format')
         tokenizer = joblib.load('tokenizer.joblib')
         print(tokenizer)
         return model, tokenizer
