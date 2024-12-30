@@ -11,7 +11,7 @@ import numpy as np
 @st.cache_resource
 def load_resources():
     try:
-        model = tf.keras.models.load_model('best_model.h5')
+        model = tf.keras.models.load_model('best_model.keras')
         tokenizer = joblib.load('tokenizer.joblib')
         print(tokenizer)
         return model, tokenizer
