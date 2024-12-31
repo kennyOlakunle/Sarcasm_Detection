@@ -39,7 +39,9 @@ Sarcasm can drastically change the tone or sentiment of a message. Whether youâ€
 ### Getting Started
 #### Prerequisites
 **Python 3.8+** recommended (works with 3.9, 3.10, etc.).
+
 **Virtual Environment** (e.g., venv or Conda) to keep dependencies isolated.
+
 **Git** for cloning and version control.
 
 #### Installation
