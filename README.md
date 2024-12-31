@@ -67,3 +67,42 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 ```
+
+### Usage
+
+1. **Dataset:** Make sure you have your sarcasm dataset (e.g., `sarcasm_dataset.csv`) in the `data/` folder.
+2. **Model:** You can train the model yourself or download a pre-trained model and place it in the `models/` folder.
+3. **Run App:** Once everything is set up, proceed to Running Locally.
+
+### Model Training
+#### Key Steps:
+1. Load data from `data/sarcasm_dataset.csv`.
+2. Perform EDA (optional but recommended) to visualize label distribution and outliers.
+3. Train the model using LSTM for 2-class classification (sarcastic vs. not sarcastic).
+4. Save the trained model and tokenizer to the directory.
+
+**Note:** Ensure the saved model folder includes all necessary files.
+
+### Streamlit Application
+The `app.py` file houses the **Streamlit** application. It:
+
+- Loads the trained model and tokenizer using `@st.cache_resource`.
+- Provides a Text Area for user input.
+- Runs Inference and outputs a sarcastic or non-sarcastic label.
+
+### Running Locally
+1. Activate your virtual environment (if not already).
+2. Navigate to the project root:
+```
+cd path/to/sarcasm_detection_app
+```
+3. Launch the Streamlit app:
+```
+streamlit run app.py
+```
+
+4. Interact with the local server URL displayed in your terminal (e.g., `http://localhost:8501`).
+
+
+
+
