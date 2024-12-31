@@ -37,12 +37,18 @@ Sarcasm can drastically change the tone or sentiment of a message. Whether youâ€
 
 
 ### Getting Started
-#### Prerequisites
+### Prerequisites
 **Python 3.8+** recommended (works with 3.9, 3.10, etc.).
 
 **Virtual Environment** (e.g., venv or Conda) to keep dependencies isolated.
 
 **Git** for cloning and version control.
 
-#### Installation
+### Installation
 
+1. **Clone the repository** (or download the ZIP):
+
+```
+git clone https://github.com/<YOUR_USERNAME>/sarcasm_detection_app.git
+cd sarcasm_detection_app
+```
