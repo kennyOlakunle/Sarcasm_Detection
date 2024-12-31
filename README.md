@@ -106,7 +106,7 @@ streamlit run app.py
 
 ### Deploying to Streamlit Cloud
 1. Push your code to a GitHub repository.
-2. Sign in to [Streamlit Cloud](https://streamlit.io/).
+2. Sign in to [Streamlit Cloud](https:://streamlit.io/).
 3. Create a New App and connect your GitHub repository.
 4. Specify app.py under “File path” and confirm the branch you want to deploy from.
 5. Deploy. After a few moments, Streamlit Cloud will build and run your app, providing a shareable URL.
