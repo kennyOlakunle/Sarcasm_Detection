@@ -52,3 +52,18 @@ Sarcasm can drastically change the tone or sentiment of a message. Whether youâ€
 git clone https://github.com/<YOUR_USERNAME>/sarcasm_detection_app.git
 cd sarcasm_detection_app
 ```
+
+2. **Create and activate a virtual environment:**
+```
+# Using venv example
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+```
+
+3. **Install dependencies:**
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+
+```
