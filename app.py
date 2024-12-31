@@ -1,6 +1,5 @@
 import streamlit as st
 import joblib
-import json
 import tensorflow as tf
 from tensorflow.keras.models import load_model, save_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -13,7 +12,6 @@ def load_resources():
     try:
         model = tf.keras.models.load_model('best_model.keras')
         tokenizer = joblib.load('tokenizer.joblib')
-        print(tokenizer)
         return model, tokenizer
     except Exception as e:
         print(f"Error loading model: {e}")
@@ -50,4 +48,4 @@ if st.button("Predict"):
     else:
         st.warning("Please enter a valid sentence.")
 
-st.markdown("This app uses an LSTM model trained on sarcasm detection data.")
+st.markdown("This app uses an LSTM model trained on sarcasm dataset.")
